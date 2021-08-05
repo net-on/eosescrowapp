@@ -13,6 +13,7 @@ using namespace eosio;
 using std::string;
 using std::to_string;
 
+// contract name: eosescroapp
 CONTRACT eosescrowapp : public eosio::contract {
  public:
   eosescrowapp( name self, name code, datastream<const char*> ds ):
