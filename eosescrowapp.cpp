@@ -36,6 +36,7 @@ CONTRACT eosescrowapp : public eosio::contract {
     require_auth(account);
     check(contact_name.length() > 0, "Contact name cannot be empty");
     check(email.length() > 0, "Email cannot be empty");
+    check(account.length() > 0, "Account name cannot be empty");
     if( iso_country.length() > 0 ) {
       check(iso_country.length() == 2, "ISO country code must be 2 letters");
       for( int i = 0; i < iso_country.length(); i++ ) {
